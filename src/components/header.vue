@@ -29,6 +29,14 @@
 <script>
 export default {
   name: "header-page",
+  data() {
+
+    const usuario = this.$store.state.usuario;
+    
+    return {
+      name: usuario.name != '' && usuario.tag != '' ? `${usuario.name}#${usuario.tag}` : '',
+    };
+  },
   methods: {
     async getUserMatchs(event) {
       event.preventDefault();
