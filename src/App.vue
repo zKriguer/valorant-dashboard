@@ -29,6 +29,7 @@ export default {
   font-family: Valorant, sans-serif;
 }
 html, body{
+  scroll-behavior: smooth;
   margin: 0 !important;
   padding: 0 !important;
 }
