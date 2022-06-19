@@ -129,7 +129,7 @@ export default {
       });
     },
     desc(partida, matchData, modo) {
-      let jogadores = partida.players.all_players
+      let jogadores = partida.players.all_players;
       let playersNeutral = document.createElement("div");
       let playersRed = document.createElement("div");
       let playersBlue = document.createElement("div");
