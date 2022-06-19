@@ -77,6 +77,7 @@ export default {
         let matchData = document.createElement("div");
         let mapa = document.createElement("p");
         let duracao = document.createElement("p");
+        let principal = document.querySelector(".principal");
 
         //INSERT DATA
         arrow.className = "girinho";
@@ -111,7 +112,7 @@ export default {
           card.classList.toggle("selected");
         });
 
-        let principal = document.querySelector(".principal");
+
         principal.appendChild(card);
         card.appendChild(fixed);
         card.appendChild(matchData);

@@ -49,9 +49,9 @@ export default {
 
       localStorage.user = JSON.stringify({ name, tag });
 
-      this.$store.commit("setUser", { name, tag });
+      await this.$store.commit("setUser", { name, tag });
 
-      await this.$store.dispatch("getMatchs")
+      await this.$store.dispatch("getMatchs");
     },
   },
 };
