@@ -30,11 +30,13 @@
 export default {
   name: "header-page",
   data() {
-
     const usuario = this.$store.state.usuario;
-    
+
     return {
-      name: usuario.name != '' && usuario.tag != '' ? `${usuario.name}#${usuario.tag}` : '',
+      name:
+        usuario.name != "" && usuario.tag != ""
+          ? `${usuario.name}#${usuario.tag}`
+          : "",
     };
   },
   methods: {
@@ -50,8 +52,8 @@ export default {
       localStorage.user = JSON.stringify({ name, tag });
 
       await this.$store.commit("setUser", { name, tag });
-
       await this.$store.dispatch("getMatchs");
+      await this.$store.dispatch("setMatches");
     },
   },
 };
@@ -71,7 +73,7 @@ header {
   padding-bottom: 11px;
 }
 .userdata input {
-    font-weight: bold;
+  font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: 2px solid #d1787f;
   padding: 10px;
@@ -88,7 +90,7 @@ header {
   top: -5px;
 }
 .logo p {
-    transform: translateX(-10px);
+  transform: translateX(-10px);
   line-height: 20px;
   margin: 0;
   max-width: 4ch;
@@ -105,8 +107,8 @@ header {
 .userdata input::placeholder {
   color: white;
 }
-#submit:hover{
-    filter: brightness(80%)
+#submit:hover {
+  filter: brightness(80%);
 }
 #submit {
   background-color: #fffbf5;
@@ -380,12 +382,12 @@ body {
 .preloader.loading {
   display: none;
 }
-@media (max-width: 670px){
-    .logo{
-        margin: 10px;
-    }
-    header{
-        justify-content: center;
-    }
+@media (max-width: 670px) {
+  .logo {
+    margin: 10px;
+  }
+  header {
+    justify-content: center;
+  }
 }
 </style>
