@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="headers">
     <div class="logo">
       <img src="../images/whitelogo.png" alt="" class="logoimg" />
       <p>VAVA DASH</p>

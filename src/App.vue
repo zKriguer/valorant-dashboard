@@ -1,20 +1,20 @@
 <template>
-  <cabecalho />
-  <corpo />
-  <rodape />
+  <header-page />
+  <body-page />
+  <footer-page />
 </template>
 
 <script>
-import cabecalho from './components/header.vue'
-import corpo from './components/body.vue'
-import rodape from './components/footer.vue'
+import HeaderPage from './components/HeaderPage.vue'
+import BodyPage from './components/BodyPage.vue'
+import FooterPage from './components/FooterPage.vue'
 
 export default {
   name: 'App',
   components: {
-    rodape,
-    corpo,
-    cabecalho
+    HeaderPage,
+    BodyPage,
+    FooterPage
   }
 }
 </script>

@@ -6,18 +6,17 @@ export default createStore({
         usuario: JSON.parse(localStorage.getItem('user')) || { name: '', tag: '' }
     },
     mutations: {
-        setUser(state, user) {
+        async setUser(state, user) {
             state.usuario = user;
         },
-        setPartidas(state, resposta) {
+        async setPartidas(state, resposta) {
             state.partidas = resposta;
             let divmain = document.querySelector('.principal');
             divmain.style.display = 'flex';
             let bodystats = document.querySelector('.bodystats');
             bodystats.style.display = 'flex'    
             let load = document.querySelector('.preloader.loading')
-            load.style.display = 'none'
-
+            load.style.display = 'none';
         }
     },
     actions: {
@@ -31,7 +30,7 @@ export default createStore({
             let resposta = (await response.json()).data;
 
 
-            state.commit('setPartidas', resposta)
+            await state.commit('setPartidas', resposta)
 
         }
 
