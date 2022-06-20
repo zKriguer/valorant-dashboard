@@ -1,24 +1,17 @@
-# valorant
 
-## Project setup
-```
-npm install
-```
+# Valorant Dashboard
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Uma dashboard para jogadores de valorant, onde você pode encontrar os dados de suas ultimas partidas.
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Autores
+
+- [@zKriguer](https://github.com/zKriguer)
+- [@Nick-Gabe](https://github.com/Nick-Gabe)
+
+
+## Demonstração
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/77925501/174518404-76cfafc5-a5a2-4826-adcd-e75c787db896.gif)
