@@ -11,11 +11,12 @@ import FooterPage from './components/FooterPage.vue'
 
 export default {
   name: 'App',
+  created() {document.title = "Valorant Dashboard"},
   components: {
     HeaderPage,
     BodyPage,
     FooterPage
-  }
+  }.
 }
 </script>
 
