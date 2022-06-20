@@ -16,7 +16,7 @@ export default {
     HeaderPage,
     BodyPage,
     FooterPage
-  }.
+  }
 }
 </script>
 
