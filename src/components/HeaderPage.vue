@@ -47,7 +47,7 @@ export default {
       let regxTag = /#.*/gm;
 
       let name = this.name.match(regxName)[0];
-      let tag = this.name.match(regxTag.slice(1))[0];
+      let tag = this.name.match(regxTag)[0].slice(1);
 
       localStorage.user = JSON.stringify({ name, tag });
 
