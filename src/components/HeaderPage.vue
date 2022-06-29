@@ -44,10 +44,10 @@ export default {
       event.preventDefault();
 
       let regxName = /.*(?=#)/gm;
-      let regxTag = /(?<=#).*/gm;
+      let regxTag = /#.*/gm;
 
       let name = this.name.match(regxName)[0];
-      let tag = this.name.match(regxTag)[0];
+      let tag = this.name.match(regxTag.slice(1))[0];
 
       localStorage.user = JSON.stringify({ name, tag });
 
