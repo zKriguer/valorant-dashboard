@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "date-stringifier": "^1.1.0",
+    "date-stringifier": "^2.0.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
