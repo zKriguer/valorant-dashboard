@@ -95,7 +95,7 @@ export default createStore({
                 arrow.className = "girinho";
                 arrow.innerHTML = store.state.svgs.arrow;
                 data.className = "duracao";
-                data.textContent = format(new Date(partida.metadata.game_start * 1000), 'ago')
+                data.textContent = format(new Date(partida.metadata.game_start * 1000), '{ago}')
                 mapa.textContent = partida.metadata.map;
                 mapa.className = "mapa";
                 tipoPartida.textContent = partida.metadata.mode;
@@ -165,7 +165,7 @@ export default createStore({
                 } </p> </div>
               </div>
               <div class="data">
-                <div class='info mobile'> ${store.state.svgs.clock} <p>Time: ${format(new Date(partida.metadata.game_start * 1000), 'ago')
+                <div class='info mobile'> ${store.state.svgs.clock} <p>Time: ${format(new Date(partida.metadata.game_start * 1000), '{ago}')
                 } </p>  </div>
                 <div class="info">${store.state.svgs.level} <p> Level: ${jogador.level
                 } </p> </div>
