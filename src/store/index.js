@@ -109,12 +109,9 @@ export default createStore({
                 result.className = "result";
                 matchData.className = "matchdata";
 
-                if ((modo == "competitive" || "unrated") && (jogadorVenceu == false)) {
+                if ((modo == "competitive" || modo == "unrated") && (jogadorVenceu == false)) {
                     result.textContent = "LOSS";
-                } else if (
-                    (modo == "competitive" ||
-                    "unrated") && (jogadorVenceu == true))
-                ) {
+                } else if ((modo == "competitive" || modo == "unrated") && (jogadorVenceu == true)) {
                     result.textContent = "WIN";
                 } else {
                     result.textContent = "----";
