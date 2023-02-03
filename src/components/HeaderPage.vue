@@ -10,7 +10,7 @@
         v-model="name"
         type="text"
         name="user"
-        placeholder="Exemplo: yKriguer#6666"
+        placeholder="Exemplo: TTV yKriguer#6666"
         required
       />
       <button v-on:click="getUserMatchs" id="submit">Status</button>
